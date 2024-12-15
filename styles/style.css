@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-primary: #03001C;
+    --color-secondary: #B6EADA;
+    --color-tertiary: #301E67;
+    --color-hover: #5B8FB9;
+
+    --font-main: "Krona One", sans-serif;
+    --font-secondary: "Montserrat", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+/* MENU SUPERIOR */
+
+.menu {
+    padding: 2% 0% 0% 15%;
+}
+
+.menu__navigation {
+    display: flex;
+    gap: 80px;
+}
+
+.menu__navigation__link {
+    font-size: 1.5rem;
+    font-family: var(--font-secondary);
+    color: var(--color-tertiary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* CONTÉUDO PRINCIPAL */
+
+.presentation {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.presentation__content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentation__content__title {
+    font-family: var(--font-main);
+    font-size: 2.25rem;
+}
+
+.text-emphasis {
+    color: var(--color-tertiary);
+}
+
+.presentation__content__subtitle {
+    color: var(--color-secondary);
+    font-family: var(--font-main);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.presentation__content__text {
+    font-family: var(--font-secondary);
+    font-size: 1.5rem;
+}
+
+.presentation__content__list {
+    list-style: none;
+    font-family: var(--font-secondary);
+    font-size: 1.5rem;
+}
+
+.presentation__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentation__links__subtitle {
+    color: var(--color-secondary);
+    font-family: var(--font-main);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.presentation__links__navegation {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--color-tertiary);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--color-secondary);
+    font-family: var(--font-secondary);
+}
+
+.presentation__links__navegation:hover {
+    background-color: var(--color-hover);
+}
+
+.presentation__image {
+    width: 45%;
+    border-radius: 40px;
+}
+
+/* RODAPÉ */
+
+.baseboard {
+    color: var(--color-primary);
+    background-color: var(--color-tertiary);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--font-secondary);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+
+    .menu {
+        padding: 10%;
+    }
+
+    .menu__navigation {
+        justify-content: center;
+    }
+
+    .presentation {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentation__content {
+        width: auto;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
